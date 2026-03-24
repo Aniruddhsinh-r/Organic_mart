@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <div class="max-w-6xl mx-auto mt-10 bg-white shadow-lg rounded-lg overflow-hidden">
+        <!-- Header -->
+        <div class="bg-yellow-400 text-white text-lg font-semibold px-6 py-3">
+            Total Feedback From Users
+        </div>
+
+        <!-- Table Section -->
+        <div class="p-4 overflow-x-auto">
+            <!-- Table Controls -->
+            <div class="flex justify-between items-center mb-3 text-sm">
+                <div>
+                    Show
+                    <select class="border rounded-md px-2 py-1">
+                        <option>10</option>
+                        <option>25</option>
+                        <option>50</option>
+                    </select>
+                    entries
+                </div>
+                <div>
+                    Search:
+                    <input type="text" class="border rounded-md px-2 py-1" placeholder="">
+                </div>
+            </div>
+
+            <!-- Table -->
+            <table class="min-w-full border border-gray-200 text-sm text-left">
+                <thead class="bg-gray-100">
+                    <tr>
+                        <th class="border px-4 py-2">FID</th>
+                        <th class="border px-4 py-2">UID</th>
+                        <th class="border px-4 py-2">User Name</th>
+                        <th class="border px-4 py-2">User E-Mail</th>
+                        <th class="border px-4 py-2">Subject</th>
+                        <th class="border px-4 py-2">Feedback</th>
+                        <th class="border px-4 py-2">Sent On</th>
+                        <th class="border px-4 py-2 text-center">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="hover:bg-gray-50">
+                        <td class="border px-4 py-2">2</td>
+                        <td class="border px-4 py-2">5</td>
+                        <td class="border px-4 py-2">Wolfmania</td>
+                        <td class="border px-4 py-2 text-blue-700">wolfmania44@gmail.com</td>
+                        <td class="border px-4 py-2 font-medium">Notification System</td>
+                        <td class="border px-4 py-2">Notification System using PHP & Ajax</td>
+                        <td class="border px-4 py-2 text-gray-600">2020-03-03 21:21:49</td>
+                        <td class="border px-4 py-2 text-center">
+                            <a href="#" class="text-blue-600 hover:text-blue-800">
+                                <i class="fa-solid fa-reply"></i>
+                            </a>
+                        </td>
+                    </tr>
+
+                    <tr class="hover:bg-gray-50">
+                        <td class="border px-4 py-2">1</td>
+                        <td class="border px-4 py-2">5</td>
+                        <td class="border px-4 py-2">Wolfmania</td>
+                        <td class="border px-4 py-2 text-blue-700">wolfmania44@gmail.com</td>
+                        <td class="border px-4 py-2 font-medium">About this project</td>
+                        <td class="border px-4 py-2">User Management System with Admin Panel.</td>
+                        <td class="border px-4 py-2 text-gray-600">2020-03-02 23:35:12</td>
+                        <td class="border px-4 py-2 text-center">
+                            <a href="#" class="text-blue-600 hover:text-blue-800">
+                                <i class="fa-solid fa-reply"></i>
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Pagination -->
+            <div class="flex justify-between items-center mt-3 text-sm">
+                <p>Showing 1 to 2 of 2 entries</p>
+                <div class="space-x-1">
+                    <button class="px-2 py-1 border rounded-md bg-gray-200 text-gray-600" disabled>Previous</button>
+                    <button class="px-3 py-1 border rounded-md bg-blue-600 text-white">1</button>
+                    <button class="px-2 py-1 border rounded-md bg-gray-200 text-gray-600">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <tr>
+        <td colspan='8' class='text-center py-4 text-gray-500'>No Feedback Found</td>
+    </tr>"
+</body>
+
+</html>
